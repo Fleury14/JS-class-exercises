@@ -1,11 +1,21 @@
 /*
-Error: Undefined variable: "$xxl-font".
-        on line 82 of C:/Users/Fleury14/Desktop/projects/JS-class-exercises/css/scss/universal.scss
-        from line 3 of C:\Users\Fleury14\Desktop\projects\JS-class-exercises\css\scss\main.scss
+Error: Undefined variable: "$black".
+        on line 11 of C:\Users\Fleury14\Desktop\projects\JS-class-exercises\css\scss\universal.scss
+
+6: }
+7: 
+8: // --------------------------------------
+9: // colors
+10: .primary-color{
+11:   color:$black;
+12: }
+13: 
+14: .secondary-color{
+15:   color:$white;
+16: }
 
 Backtrace:
-C:/Users/Fleury14/Desktop/projects/JS-class-exercises/css/scss/universal.scss:82
-C:\Users\Fleury14\Desktop\projects\JS-class-exercises\css\scss\main.scss:3
+C:\Users\Fleury14\Desktop\projects\JS-class-exercises\css\scss\universal.scss:11
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -20,19 +30,6 @@ C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/pe
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
@@ -65,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$xxl-font\".\A         on line 82 of C:/Users/Fleury14/Desktop/projects/JS-class-exercises/css/scss/universal.scss\A         from line 3 of C:\Users\Fleury14\Desktop\projects\JS-class-exercises\css\scss\main.scss"; }
+  content: "Error: Undefined variable: \"$black\".\A         on line 11 of C:\Users\Fleury14\Desktop\projects\JS-class-exercises\css\scss\universal.scss\A \A 6: }\A 7: \A 8: // --------------------------------------\A 9: // colors\A 10: .primary-color{\A 11:   color:$black;\A 12: }\A 13: \A 14: .secondary-color{\A 15:   color:$white;\A 16: }"; }
