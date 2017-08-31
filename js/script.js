@@ -10,6 +10,8 @@ const contentLink1 = document.querySelector('#content-link-1');
 const contentLink2 = document.querySelector('#content-link-2');
 const contentLink3 = document.querySelector('#content-link-3');
 const contentLink4 = document.querySelector('#content-link-4');
+var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+
 
 // pane 2 elements
 const code = document.querySelector('#keycodeBox');
@@ -22,11 +24,21 @@ const createUserButton = document.querySelector('#submit-button');
 const userList = document.querySelector('#userProfiles')
 
 function showNavBox() { // function to open and close the nav bar
-  if(headerBox.style.height!=='200px') {
-    headerBox.style.height='200px';
-  //  headerButton.style.top = '150px';
-    headerButton.textContent = 'Close!';
-    headerContainer.style.opacity = '1';
+
+  width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+
+  if(headerBox.style.height!=='150px' && headerBox.style.height!=='300px') {
+    if(width < 768) {
+      headerBox.style.height='300px';
+    //  headerButton.style.top = '150px';
+      headerButton.textContent = 'Close!';
+      headerContainer.style.opacity = '1';
+    } else {
+      headerBox.style.height='150px';
+    //  headerButton.style.top = '150px';
+      headerButton.textContent = 'Close!';
+      headerContainer.style.opacity = '1';
+    }
   } else {
     headerBox.style.height='10px';
     headerButton.style.top = '-20px';

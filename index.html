@@ -11,20 +11,22 @@
 </head>
 <body>
   <nav>
-    <div class="header primary-bg-color"> <!-- Begin Header box -->
-      <div class="container header-container"> <!-- begin nav container -->
-        <div class="row hundred-height"> <!-- begin nav row -->
-          <div class="col-sm-3 hundred-height header-item-box" id="content-link-1">
-            Logo goes here
+    <div class="header primary-bg-color" id="header"> <!-- Begin Header box -->
+      <div class="container header-container" id="header-overwrite"> <!-- begin nav container -->
+        <div class="row hundred-height text-center"> <!-- begin nav row -->
+          <div class="col-xs-6 col-sm-3 hundred-height header-item-box" id="content-link-1">
+            <h3>Logo goes here</h3>
           </div>
-          <div class="col-sm-3 hundred-height header-item-box" id="content-link-2">
-            Keycode
+          <div class="col-xs-6 col-sm-3 hundred-height header-item-box" id="content-link-2">
+            <h3>Keycode info</h3>
+            <p>Displays the character code for any key pressed.</p>
           </div>
-          <div class="col-sm-3 hundred-height header-item-box" id="content-link-3">
-            Form info
+          <div class="col-xs-6 col-sm-3 hundred-height header-item-box" id="content-link-3">
+            <h3>Sample form</h3>
+            <p>Demonstrates use of form input mainpulation and use of constructors</p>
           </div>
-          <div class="col-sm-3 hundred-height header-item-box" id="content-link-4">
-            contact
+          <div class="col-xs-6 col-sm-3 hundred-height header-item-box" id="content-link-4">
+            <h3>Contact Me</h3>
           </div>
         </div> <!-- end nav row -->
       </div> <!-- end nav cont -->
@@ -32,9 +34,13 @@
     </div><!-- End header box -->
   </nav>
   <div class="content-container content-container-1 active-content" id="content-container-1"> <!-- Begin far left pane -->
-    <div> <!-- begin wrapper -->
-      <h1>Yo check out my assignments dag</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, sunt consectetur. At laboriosam quaerat cupiditate pariatur quo excepturi provident adipisci voluptas dolores totam dicta nihil odio blanditiis repellendus, minima illo.</p>
+    <div class="lato text-center"> <!-- begin wrapper -->
+      <h1 class="text-center contact-header-text">JavaScript Class Assignments</h1>
+      <p>Here's a running list of my assignments for my JavaScript class. Click the open button above to access the nav.</p>
+      <h3 class="contact-header-text">Other projects</h3>
+      <a href="http://fleury14.github.io/scrabble" target="_blank" class="button-anchor">
+        <button class="buttonlink">Word Fight</button>
+      </a>
     </div> <!-- end wrapper -->
   </div> <!-- End far left pane -->
   <div class="content-container content-container-2" id="content-container-2">
@@ -64,9 +70,34 @@
     </div> <!-- end wrapper -->
   </div><!-- end pane 3 -->
   <div class="content-container content-container-4" id="content-container-4"><!-- Begin far right pane -->
-    <div class="hidden-test">
-      <h1>Yo check out my assignments dag</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, sunt consectetur. At laboriosam quaerat cupiditate pariatur quo excepturi provident adipisci voluptas dolores totam dicta nihil odio blanditiis repellendus, minima illo.</p>
+    <div class="hidden-test lato">
+      <h1 class="text-center contact-header-text">Contact Me</h1>
+      <div class="container contact-container">
+        <div class="row">
+          <div class="col-sm-1 col-sm-offset-2">
+            GHICON
+          </div>
+          <div class="col-sm-7">
+            <p>Contact me on github</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-1 col-sm-offset-2">
+            TWITTER
+          </div>
+          <div class="col-sm-7">
+            <p>Contact me on twitter</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-1 col-sm-offset-2">
+            EMAIL
+          </div>
+          <div class="col-sm-7">
+            <p>Send me an email</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div> <!-- End far right pane -->
   <script
