@@ -15,6 +15,12 @@
   overflow: hidden;
   opacity: 0;
   transition: all 0.5s;
+  height: 100%;
+}
+
+.header-item-box {
+  background-color: $darker-purple;
+  border: 2px solid $primary-color;
 }
 
 .open-button {
@@ -29,32 +35,193 @@
 }
 
 /* End header styles */
+/* Begin container styles */
 
 .content-container {
   float: left;
   min-height: 100vh;
   overflow: hidden;
   transition: all 0.5s;
-}
-
-#content-container-1 {
-  width: 97%;
-  border: 5px solid $darker-purple;
-}
-
-#content-container-2 {
   width: 1%;
+}
+
+.content-container-1 {
+
+  border: 5px solid $darker-purple;
+  background-color: $darker-purple;
+}
+
+.content-container-2 {
   border: 5px solid $medium-purple;
   background-color: $medium-purple;
 }
-#content-container-3 {
-  width: 1%;
+.content-container-3 {
   border: 5px solid $light-purple;
   background-color: $light-purple;
 }
 
-#content-container-4 {
-  width: 1%;
+.content-container-4 {
   border: 5px solid $bright-purple;
   background-color: $bright-purple;
 }
+
+.content-container > div {
+  visibility: hidden;
+  padding: 10px;
+}
+
+.active-content {
+  width: 97%;
+  background-color: #fff;
+}
+
+.active-content > div {
+  visibility: visible;
+}
+
+/* End Container Styles */
+/* Begin pane 1 styles */
+
+/*End Pane 1 Styles */
+
+/* Begin pane 2 Styles */
+
+.keycode-container {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#keypressBox {
+  background: grey;
+  box-shadow: 3px 3px 3px #aaa;
+  padding: 10px;
+}
+
+#keycodeBox {
+  font-size: 20em;
+}
+
+/* End pane 2 styles */
+
+/* Begin pane 3 styles */
+
+.fakenav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 8px 32px 8px 16px;
+    background-color: $primary-color;
+    position: relative;
+}
+
+.fakenav button {
+    padding: 8px 16px;
+    border: 1px solid hsl(25, 10%, 12%);
+    background-color: $primary-color;
+    color: hsl(46, 88%, 45%);
+    border-radius: 100px 100px;
+    cursor: pointer;
+}
+.fakenav button:hover {
+    border-color: hsl(25, 10%, 12%);
+    background-color: $darker-purple;
+    color: hsl(46, 88%, 55%);
+}
+.fakenav button span:first-child {
+    display: inline-block;
+    font-size: 125%;
+}
+.fakenav form {
+    background-color: $primary-color;
+    padding: 8px 16px;
+    position: absolute;
+    top: 100%;
+    right: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.fakenav form.form-hidden {
+    display: none;
+}
+.fakenav form input:not(:last-child){
+    margin-bottom: 4px;
+    border: 0;
+    padding: 8px;
+    font-size: inherit;
+}
+.fakenav form input:last-child {
+    align-self: flex-end;
+    padding: 8px 16px;
+    margin-top: 4px;
+    border-radius: 2px;
+    color: white;
+    border: 1px solid $darker-purple;
+    background-color: $medium-purple;
+    cursor: pointer;
+}
+.fakenav form input:last-child:hover {
+    border-color: $medium-purple;
+    background-color: $light-purple;
+}
+.fakenav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.fakenav #userProfiles {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 16px;
+    background-color: $primary-color;
+    padding: 16px;
+    font-family: sans-serif;
+}
+.fakenav #userProfiles::before {
+    content: 'Users';
+    display: block;
+    background-color: #fff;
+    color: $primary-color;
+    padding: 4px;
+}
+.fakenav #userProfiles::after {
+    content: '';
+    display: block;
+    border-width: 0px 16px 8px 16px;
+    border-style: solid;
+    border-color: transparent transparent $primary-color transparent;
+    position: absolute;
+    bottom: 100%;
+    left: 16px;
+}
+.fakenav #userProfiles > li {
+    padding: 8px 0 0;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.fakenav #userProfiles > li:not(:last-child){
+    padding: 8px 0;
+    border-bottom: 1px solid hsl(25, 10%, 32%);
+}
+.fakenav #userProfiles ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 28px;
+    height: 28px;
+}
+.fakenav #userProfiles ul li {
+    flex: none;
+    width: 25%;
+}
+.fakenav #userProfiles h1 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 200;
+    margin-left: 8px;
+    color: white;
+}
+
+/* End pane 3 styles */
