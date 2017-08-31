@@ -18,7 +18,7 @@ html, body {
 // -----------------------------------------
 // bg colors
 .primary-bg-color{
-  background-color:$black;
+  background-color:$primary-color;
 }
 
 .secondary-bg-color{
@@ -53,6 +53,13 @@ html, body {
 
 // ----------------------------------------
 // fonts
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+
 .pink-floyd {
   font-family:'pink-floyd', 'cursive';
 }
