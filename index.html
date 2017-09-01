@@ -4,13 +4,103 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>JS Assignments</title>
+  <link rel="shortcut icon" href="icon/jr-icon.jpg" type="image/x-icon">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
+  <nav>
+    <div class="header primary-bg-color" id="header"> <!-- Begin Header box -->
+      <div class="container header-container" id="header-overwrite"> <!-- begin nav container -->
+        <div class="row hundred-height text-center"> <!-- begin nav row -->
+          <div class="col-xs-6 col-sm-3 hundred-height pointer header-item-box flex justify-center align-center logo-box" id="content-link-1">
+            <h3 class="marker">JR</h3>
+          </div>
+          <div class="col-xs-6 col-sm-3 hundred-height pointer header-item-box" id="content-link-2">
+            <h3>Keycode info</h3>
+            <p>Displays the character code for any key pressed.</p>
+          </div>
+          <div class="col-xs-6 col-sm-3 hundred-height pointer header-item-box" id="content-link-3">
+            <h3>Sample form</h3>
+            <p>Demonstrates use of form input mainpulation and use of constructors</p>
+          </div>
+          <div class="col-xs-6 col-sm-3 hundred-height pointer header-item-box" id="content-link-4">
+            <h3>Contact Me</h3>
+          </div>
+        </div> <!-- end nav row -->
+      </div> <!-- end nav cont -->
+      <button class="open-button lato" id="navOpen">Open!</button>
+    </div><!-- End header box -->
+  </nav>
+  <div class="content-container content-container-1 active-content" id="content-container-1"> <!-- Begin far left pane -->
+    <div class="lato text-center"> <!-- begin wrapper -->
+      <h1 class="text-center contact-header-text">JavaScript Class Assignments</h1>
+      <p>Here's a running list of my assignments for my JavaScript class. Click the open button above to access the nav.</p>
+      <h3 class="contact-header-text">Other projects</h3>
+      <a href="http://fleury14.github.io/scrabble" target="_blank" class="button-anchor">
+        <button class="buttonlink">Word Fight</button>
+      </a>
+    </div> <!-- end wrapper -->
+  </div> <!-- End far left pane -->
+  <div class="content-container content-container-2" id="content-container-2">
+    <div class="lato"> <!-- begin wrapper -->
+      <div class="keycode-container">
+        <div id="keycodeBox"></div>
+        <div id="keypressBox"></div>
+        <p class="text-center">Press Any key to display it's keycode</p>
+      </div>
+    </div><!-- end wrapper -->
+  </div><!-- end pane 2 -->
+  <div class="content-container content-container-3" id="content-container-3">
+    <div class="lato"> <!-- begin wrapper -->
+      <div class="fakenav">
+        <ul id="userProfiles"></ul>
+        <button type="button">
+            <span>+</span>
+            <span>New User</span>
+        </button>
+        <form class="form-hidden" id="user-form">
+            <input name="first" type="text" placeholder="first name">
+            <input name="last" type="text" placeholder="last name">
+            <input name="username" type="text" placeholder="username">
+            <input type="submit" value="Create User" id="submit-button">
+        </form>
+      </div> <!-- end fake nav -->
+    </div> <!-- end wrapper -->
+  </div><!-- end pane 3 -->
+  <div class="content-container content-container-4" id="content-container-4"><!-- Begin far right pane -->
+    <div class="hidden-test lato">
+      <h1 class="text-center contact-header-text">Contact Me</h1>
+      <div class="container contact-container">
+        <div class="row">
+          <div class="col-sm-1 col-sm-offset-2 flex align-center justify-center">
+          <a href="http://www.github.io/fleury14" target="_blank"><i class="fa fa-github text-center" aria-hidden="true"></i></a>
+          </div>
+          <div class="col-sm-7 flex align-center">
+            <p class="contact-text">Click on the icon to check out some of my other repositories to see my work.</p>
+          </div>
+        </div> <!-- End row 1 -->
+        <div class="row">
+          <div class="col-sm-1 col-sm-offset-2 flex align-center justify-center">
+            <a href="http://www.twitter.com/lqfleury14" target="_blank"><i class="fa fa-twitter text-center" aria-hidden="true"></i></a>
+          </div>
+          <div class="col-sm-7 flex align-center">
+            <p class="contact-text">Or if you need an immediate response, send me a tweet</p>
+          </div>
+        </div> <!-- End row 2 -->
+        <div class="row">
+          <div class="col-sm-1 col-sm-offset-2 flex align-center justify-center">
+            <a href="http://www.twitter.com/lqfleury14" target="_blank"><i class="fa fa-cog  text-center" aria-hidden="true"></i></a>
+          </div>
+          <div class="col-sm-7 flex align-center">
+            <p class="contact-text">Or shoot me an e-mail</p>
+          </div>
+        </div> <!-- end row 3 -->
+      </div> <!-- End contact container -->
+    </div>
+  </div> <!-- End far right pane -->
   <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
