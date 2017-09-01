@@ -58,7 +58,11 @@ html, body {
 // ----------------------------------------
 // fonts
 
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Lato|Permanent+Marker');
+
+.marker {
+  font-family: 'Permanent Marker', cursive;
+}
 
 .lato {
   font-family: 'Lato', sans-serif;
@@ -218,4 +222,10 @@ html, body {
 //  visibility
 .hidden{
   visibility:hidden;
+}
+
+/* cursor pointers */
+
+.pointer {
+  cursor: pointer;
 }

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Lato|Permanent+Marker");
 html, body {
   height: 100%;
   width: 100%;
@@ -37,6 +37,9 @@ html, body {
 
 .hundred-height {
   height: 100%; }
+
+.marker {
+  font-family: 'Permanent Marker', cursive; }
 
 .lato {
   font-family: 'Lato', sans-serif; }
@@ -151,6 +154,10 @@ html, body {
 .hidden {
   visibility: hidden; }
 
+/* cursor pointers */
+.pointer {
+  cursor: pointer; }
+
 /* Begin header Styles */
 .header {
   background-color: #550055;
@@ -167,6 +174,10 @@ html, body {
 .header-item-box {
   background-color: #770077;
   border: 2px solid #550055; }
+
+.logo-box h3 {
+  font-size: 3em;
+  margin: 0; }
 
 .open-button {
   padding: 5px 10px;
@@ -380,4 +391,10 @@ html, body {
   background-color: rgba(255, 0, 255, 0.2);
   box-shadow: 3px 3px 3px #550055; }
 
-/*# sourceMappingURL=styles.css.map */
+.fa {
+  color: #550055;
+  font-size: 2em; }
+
+.contact-text {
+  margin-bottom: 5px;
+  margin-top: 5px; }
